@@ -1,0 +1,23 @@
+Requisitos:
+  Pastas:
+    /index, /pages/ficha-form, /assets/icons, /assets/imgs
+
+  HTML:
+    header, body, footer, section, a, img, div, form
+
+  JS:
+    fetch
+
+  CSS:
+    reset css, base css, flex, position, @media:{}
+
+  Navegação:
+    index:
+      #D&D sitezin,
+      #Sobre,
+      /ficha-maker,
+
+    /pages/ficha-maker:
+      /index,
+
+onhaxpk.net
