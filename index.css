@@ -6,9 +6,9 @@
    background-position: center;
 }
 
-.backdrop-blur{
-    backdrop-filter: blur(10px);
-    background-color: white;
+.backdrop-blur {
+   backdrop-filter: blur(5px);
+   background-color: #ffffff10;
 }
 
 .hero-container {
@@ -16,6 +16,8 @@
    flex-direction: column;
    align-items: center;
    justify-content: space-between;
+
+   height: 1080px;
 
    padding-top: 0.5;
    padding-bottom: 0.5;
