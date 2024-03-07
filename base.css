@@ -2,7 +2,7 @@
 
 :root {
    --cor-primaria: #0f74bc;
-   --cor-secundaria: #0c609c;
+   --cor-secundaria-dark: #320000;
    --cor-terciaria: #0a5388;
    --cor-background: #050510;
 }
@@ -25,24 +25,52 @@ body {
    width: 100%;
 }
 
-header {
+.navbar {
+   position: sticky;
+   z-index: 20;
+   top: 0;
+   left: 0;
+
    background-color: #320000;
    padding: 0.5rem;
 }
 
-header > .navbar {
-   position: sticky;
-   z-index: 1;
-   top: 0;
+.nav-content, .nav-action{
+   display: flex;
+   flex: 1;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.nav-content{
+   flex-direction: column;
+   align-items: normal;
+}
+
+.menu-button {
+   width: 2rem;
+   order: 2;
+}
+
+.menu-button:hover {
+   border-radius: 0.5rem;
+   background-color: #ffffff20;
+   transition-delay: 500;
 }
 
 .nav-list {
-   display: flex;
+   display: none;
    flex-direction: column;
+   align-items: center;
    list-style: none;
 }
 
+.show-nav-list{
+   display: flex;
+}
+
 .nav-item {
+   width: 100%;
    padding: 0.5rem;
    padding-left: 2rem;
    cursor: pointer;
@@ -52,7 +80,7 @@ header > .navbar {
    background-color: #ffffff20;
    border-radius: 0.2rem;
 
-   transition-delay: 500
+   transition-delay: 500;
 }
 
 /* Elemento com width maior que 640px */
@@ -62,34 +90,37 @@ header > .navbar {
    }
 
    header {
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
    }
 
-   header > .navbar {
+   .menu-button {
+      display: none;
+      order: 1;
+   }
+
+   .nav-content{
+      flex-direction: row;
+   }
+
+   .nav-list, .nav-content{
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-   }
-
-   .nav-list {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
    }
-
+   
+   .nav-list{
+      order: 2;
+   }
    .nav-item {
-      margin-left: auto;
-      margin-right: auto;
+      width: auto;
    }
 
    .nav-item:hover {
-    font-size: large;
-
-    background-color: transparent;
-    color: var(--cor-primaria)
-
- }
+      background-color: transparent;
+      color: var(--cor-primaria);
+   }
 }
 
 /* Elemento com width maior que 768px */
