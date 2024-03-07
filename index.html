@@ -5,22 +5,43 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="reset.css" />
       <link rel="stylesheet" href="base.css" />
+      <link rel="stylesheet" href="index.css" />
       <title>D&D</title>
    </head>
    <body>
-      <header>
-         <div class="container navbar">
-            <a href="/index.html">
-               <h1>Um D&D aqui</h1>
-            </a>
-            <ul class="nav-list">
-               <li class="nav-item">coisa 1</li>
-               <li class="nav-item">coisa 2</li>
-               <li class="nav-item">coisa 3</li>
-            </ul>
+      <header id="navbar" class="navbar">
+         <div class="container nav-content">
+            <div class="nav-action">
+               <a href="/index.html">
+                  <h1>Um D&D aqui</h1>
+               </a>
+               <button type="button" class="menu-button" onclick="toggleCollapsableMenu()">
+                  <img src="assets/icons/menu-icon.svg" alt="Ícone menu colapsável" />
+               </button>
+            </div>
+            <nav id="navbar">
+               <ul class="nav-list">
+                  <li id="nav-sobre" class="nav-item">Sobre</li>
+                  <li id="nav-criar_ficha" class="nav-item">Criar Ficha</li>
+               </ul>
+            </nav>
          </div>
       </header>
-      <main class="container">Outro dnd aqui</main>
+      <main>
+         <section id="hero" class="hero-bg">
+            <div class="container hero-container">
+               <h1>um Hero aqui</h1>
+               <h1>Outro Hero aqui</h1>
+            </div>
+         </section>
+      </main>
       <footer class="container">Vai ter um D&D aqui também</footer>
+
+      <script>
+         function toggleCollapsableMenu() {
+            const nav = document.querySelector(".nav-list");
+            nav.classList.toggle("show-nav-list");
+         }
+      </script>
    </body>
 </html>
