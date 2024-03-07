@@ -73,7 +73,7 @@ a > h1 {
    background-color: #ffffff20;
    border-radius: 0.2rem;
 
-   transition-delay: 500;
+   transition-duration: 1000;
 }
 
 @media (min-width: 640px) {

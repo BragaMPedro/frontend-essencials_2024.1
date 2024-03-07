@@ -65,15 +65,23 @@
 
 .card {
    flex: 1;
+   max-width: 420px;
+
    display: flex;
    flex-direction: column;
    padding: 1rem;
    gap: 1.5rem;
-   max-width: 420px;
-
+   
    border-radius: 1.25rem;
    background-color: #512626;
+   box-shadow: 0 0.5rem 0.6rem 0 #00000050;
 }
+
+#card-title{
+   margin-top: -0.5rem;
+   margin-bottom: 1rem;
+}
+
 
 .card > a, .card > a > img{
    width: 100%;
@@ -82,6 +90,11 @@
 .card > a:nth-child(3){
    width: 100%;
    text-align: right;
+}
+
+.card > a:hover{
+   color: var(--cor-primaria);
+   transition-duration: 1000;
 }
 
 /* Elemento com width maior que 640px */
