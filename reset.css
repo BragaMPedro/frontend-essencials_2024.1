@@ -9,3 +9,9 @@ body {
    font-size: 100%;
    list-style-type: none;
 }
+
+button{
+   cursor: pointer;
+   border: none;
+   background-color: transparent;
+}
