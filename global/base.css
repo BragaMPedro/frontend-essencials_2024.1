@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+   --cor-primaria: #0f74bc;
+   --cor-secundaria-dark: #320000;
+   --cor-terciaria: #0a5388;
+   --cor-background: #050510;
+}
+
+body {
+   width: 100%;
+   min-height: 100vh;
+
+   color-scheme: dark;
+   background-color: var(--cor-background);
+
+   color: white;
+   font-family: "Quicksand", sans-serif;
+}
+
+.container {
+   margin-left: auto;
+   margin-right: auto;
+
+   width: 100%;
+}
+
+/* Elemento com width maior que 640px */
+@media (min-width: 640px) {
+   .container {
+      max-width: 640px;
+   }
+}
+
+/* Elemento com width maior que 768px */
+@media (min-width: 768px) {
+   .container {
+      max-width: 768px;
+   }
+}
+
+/* Elemento com width maior que 1024px */
+@media (min-width: 1024px) {
+   .container {
+      max-width: 1024px;
+   }
+}
+
+/* Elemento com width maior que 1280px */
+@media (min-width: 1280px) {
+   .container {
+      max-width: 1280px;
+   }
+}

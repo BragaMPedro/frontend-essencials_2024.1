@@ -1,30 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-
-:root {
-   --cor-primaria: #0f74bc;
-   --cor-secundaria-dark: #320000;
-   --cor-terciaria: #0a5388;
-   --cor-background: #050510;
-}
-
-body {
-   width: 100%;
-   min-height: 100vh;
-
-   color-scheme: dark;
-   background-color: var(--cor-background);
-
-   color: white;
-   font-family: "Quicksand", sans-serif;
-}
-
-.container {
-   margin-left: auto;
-   margin-right: auto;
-
-   width: 100%;
-}
-
 .navbar {
    position: sticky;
    z-index: 20;
@@ -42,6 +15,19 @@ body {
    justify-content: space-between;
 }
 
+.nav-action > a {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+
+   flex:1;
+}
+
+#logo-icon{
+    max-width: 4rem;
+    max-height:4rem;
+}
+
 .nav-content{
    flex-direction: column;
    align-items: normal;
@@ -49,7 +35,6 @@ body {
 
 .menu-button {
    width: 2rem;
-   order: 2;
 }
 
 .menu-button:hover {
@@ -71,9 +56,11 @@ body {
 
 .nav-item {
    width: 100%;
-   padding: 0.5rem;
+   padding: 1rem;
    padding-left: 2rem;
    cursor: pointer;
+
+   text-align: center;
 }
 
 .nav-item:hover {
@@ -83,12 +70,7 @@ body {
    transition-delay: 500;
 }
 
-/* Elemento com width maior que 640px */
 @media (min-width: 640px) {
-   .container {
-      max-width: 640px;
-   }
-
    header {
       padding-top: 1rem;
       padding-bottom: 1rem;
@@ -96,7 +78,6 @@ body {
 
    .menu-button {
       display: none;
-      order: 1;
    }
 
    .nav-content{
@@ -110,43 +91,14 @@ body {
       justify-content: space-between;
    }
    
-   .nav-list{
-      order: 2;
-   }
    .nav-item {
       width: auto;
+      padding: 0.5rem;
+      padding-left: 0.5rem;
    }
 
    .nav-item:hover {
       background-color: transparent;
       color: var(--cor-primaria);
-   }
-}
-
-/* Elemento com width maior que 768px */
-@media (min-width: 768px) {
-   .container {
-      max-width: 768px;
-   }
-}
-
-/* Elemento com width maior que 1024px */
-@media (min-width: 1024px) {
-   .container {
-      max-width: 1024px;
-   }
-}
-
-/* Elemento com width maior que 1280px */
-@media (min-width: 1280px) {
-   .container {
-      max-width: 1280px;
-   }
-}
-
-/* Elemento com width maior que 1536px */
-@media (min-width: 1536px) {
-   .container {
-      max-width: 1536px;
    }
 }
