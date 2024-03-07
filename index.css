@@ -8,28 +8,124 @@
 
 .backdrop-blur {
    backdrop-filter: blur(5px);
-   background-color: #ffffff10;
+   background-color: #32000050;
+   background-blend-mode: lighten;
+}
+
+.main-padding {
+   padding: 0.867rem;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
 }
 
 .hero-container {
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: space-between;
 
-   height: 1080px;
+   gap: 2rem;
+}
 
-   padding-top: 0.5;
-   padding-bottom: 0.5;
+.logo-hero-container {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+}
+
+.logo-hero-container > img {
+   width: 100%;
+   min-width: 100px;
+   max-width: 288px;
+
+   fill: white;
+   color: white;
+}
+
+.hero-container > div {
+   flex: 1;
+   text-align: center;
+}
+
+#materias > h2 {
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+
+.materias-container {
+   width: 100%;
+
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   gap: 2rem;
+}
+
+.card {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   padding: 1rem;
+   gap: 1.5rem;
+   max-width: 420px;
+
+   border-radius: 1.25rem;
+   background-color: #512626;
+}
+
+.card > a, .card > a > img{
+   width: 100%;
+}
+
+.card > a:nth-child(3){
+   width: 100%;
+   text-align: right;
 }
 
 /* Elemento com width maior que 640px */
 @media (min-width: 640px) {
-   .hero-container {
-      flex-direction: row;
-      justify-content: space-between;
-
+   .main-padding {
+      padding: 5%;
       padding-top: 1rem;
       padding-bottom: 1rem;
+   }
+
+   .hero-container {
+      flex-direction: row-reverse;
+
+      gap: 0;
+   }
+
+   .hero-container > div {
+      flex: 1;
+      font-size: xx-large;
+      text-align: left;
+   }
+
+   .logo-hero-container {
+      width: 100%;
+      min-width: 288px;
+      justify-content: end;
+   }
+
+   .hero-container > div > p {
+      font-size: 1.5rem;
+   }
+
+   .materias-container {
+      flex-direction: row;
+      align-items: center;
+   }
+
+   .card {
+      padding: 1rem;
+
+      width: 25%;
+      min-width: 288px;
+
+      border-radius: 1.25rem;
+      background-color: #512626;
    }
 }
