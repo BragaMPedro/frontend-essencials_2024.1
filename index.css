@@ -18,8 +18,8 @@
    min-height: 24rem;
 
    padding: 0.867rem;
-   padding-top: 1rem;
-   padding-bottom: 1rem;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
 }
 
 .hero-container {
@@ -40,9 +40,6 @@
    width: 100%;
    min-width: 100px;
    max-width: 288px;
-
-   fill: white;
-   color: white;
 }
 
 .hero-container > div {
@@ -51,9 +48,9 @@
 }
 
 /* Matérias */
-#materias > h2 {
-   margin-top: 1rem;
-   margin-bottom: 1rem;
+section > h2 {
+   margin-bottom: 2rem;
+   text-align: center;
 }
 
 .materias-container {
@@ -144,13 +141,12 @@ div[class*="container"]{
 @media (min-width: 640px) {
    .main-padding {
       padding: 5%;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
    }
 
    .hero-container {
       flex-direction: row-reverse;
-
       gap: 0;
    }
 
@@ -169,6 +165,11 @@ div[class*="container"]{
    .hero-container > div > p {
       font-size: 1.5rem;
    }
+
+   section > h2 {
+      text-align: left;
+   }
+   
 
    .materias-container {
       flex-direction: row;

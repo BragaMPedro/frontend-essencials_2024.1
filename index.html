@@ -6,6 +6,7 @@
       <link rel="stylesheet" href="./global/reset.css" />
       <link rel="stylesheet" href="./global/base.css" />
       <link rel="stylesheet" href="./global/navbar.css" />
+      <link rel="stylesheet" href="./global/footer.css" />
       <link rel="stylesheet" href="index.css" />
       <link rel="icon" href="./assets/icons/favicon.svg" />
       <title>W&W</title>
@@ -16,7 +17,7 @@
             <div class="nav-action">
                <a href="#hero">
                   <img id="logo-icon" src="./assets/icons/favicon.svg" />
-                  <h1>Wiverns & Waterfallls</h1>
+                  <h1>Wyverns & Waterfallls<sup><small>&copy;</small></sup></h1>
                </a>
                <button type="button" class="menu-button" onclick="toggleCollapsableMenu()">
                   <img src="assets/icons/menu-icon.svg" alt="Menu colapsável" />
@@ -42,7 +43,7 @@
                      <img src="./assets/imgs/Artificer.png" alt="logo" width="288px" />
                   </div>
                   <div>
-                     <h2>Wiverns & Waterfallls</h2>
+                     <h2>Wyverns & Waterfallls</h2>
                      <br />
                      <p>
                         Veja mais de perto esse RPG de fantasia lendário e descubra porque milhões de jogadores ao redor
@@ -61,11 +62,11 @@
                      <img src="./assets/imgs/card-1.jpg" alt="Pessoas medievais jogando W&W" />
                   </a>
                   <div id="card-content">
-                     <h3 id="card-title">O que é Wiverns & Waterfalls?</h3>
+                     <h3 id="card-title">O que é Wyverns & Waterfalls?</h3>
                      <p id="card-text">
                         Aqui você encontrará orientações e recursos para aprender o jogo e continuar sua jornada. Como
                         primeiro passo, também recomendamos o Kit Introdutório de W&W, que contém tudo o que você
-                        precisa para jogar Wiverns & Waterfalls!
+                        precisa para jogar Wyverns & Waterfalls!
                      </p>
                   </div>
                   <a target="_blank" title="link para a matéria" href="https://dnd.wizards.com/pt-BR/what-is-dnd"
@@ -79,7 +80,7 @@
                   <div id="card-content">
                      <h3 id="card-title">Como ser um WM?</h3>
                      <p id="card-text">
-                        Em Wiverns & Waterfalls, uma pessoa atua como Wivern Master (ou “WM”), o principal narrador e
+                        Em Wyverns & Waterfalls, uma pessoa atua como Wivern Master (ou “WM”), o principal narrador e
                         árbitro do jogo. O WM narra a aventura para os jogadores, que atravessam seus perigos e decidem
                         quais caminhos explorar.
                      </p>
@@ -120,7 +121,25 @@
             </div>
          </section>
       </main>
-      <!-- <footer class="container">Vai ter um W&W aqui também</footer> -->
+      <footer class="container">
+         <section id="footer-section-left" class="footer-logo-container">
+            <a href="#hero">
+               <img id="logo-footer-icon" src="./assets/icons/favicon.svg" />
+               <h2>Wyverns & Waterfallls<sup><small>&copy;</small></sup></h2>
+            </a>
+         </section>
+         <section id="footer-section-right">
+            <h2>Navegação</h2>
+            <ul>
+               <li id="nav-sobre" class="nav-item">
+                  <a href="#sobre">Sobre</a>
+               </li>
+               <li id="nav-criar_ficha" class="nav-item">
+                  <a href="./pages/ficha-form/ficha-form.html">Criar Ficha</a>
+               </li>
+            </ul>
+         </section>
+      </footer>
 
       <script>
          function toggleCollapsableMenu() {
