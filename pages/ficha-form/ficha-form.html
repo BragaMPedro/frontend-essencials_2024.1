@@ -3,36 +3,62 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="../../global/reset.css" />
-      <link rel="stylesheet" href="../../global/base.css" />
-      <link rel="stylesheet" href="../../global/navbar.css" />
-      <link rel="icon" href="./assets/icons/favicon.svg" />
+      <link rel="stylesheet" href="/global/reset.css" />
+      <link rel="stylesheet" href="/global/base.css" />
+      <link rel="stylesheet" href="/global/navbar.css" />
+      <link rel="stylesheet" href="/global/footer.css" />
+      <link rel="icon" href="/assets/icons/favicon.svg" />
       <title>D&D - Ficha</title>
    </head>
    <body>
       <header id="navbar" class="navbar">
          <div class="container nav-content">
             <div class="nav-action">
-               <a href="../../index.html">
-                  <img id="logo-icon" src="../../assets/icons/favicon.svg" />
-                  <h1>Um D&D aqui</h1>
+               <a href="#hero">
+                  <img id="logo-icon" src="/assets/icons/favicon.svg" />
+                  <h1>
+                     Wyverns & Waterfallls<sup><small>&copy;</small></sup>
+                  </h1>
                </a>
                <button type="button" class="menu-button" onclick="toggleCollapsableMenu()">
-                  <img src="assets/icons/menu-icon.svg" alt="Menu colapsável" />
+                  <img src="/assets/icons/menu-icon.svg" alt="Menu colapsável" />
                </button>
             </div>
             <nav id="navbar">
                <ul class="nav-list">
                   <li id="nav-sobre" class="nav-item">
-                     <a href="#sobre">Sobre</a>
+                     <a href="/index.html">Sobre</a>
                   </li>
                   <li id="nav-criar_ficha" class="nav-item">
-                     <a href="./pages/ficha-form/ficha-form.html">Criar Ficha</a>
+                     <a href="/pages/ficha-form/ficha-form.html">Criar Ficha</a>
                   </li>
                </ul>
             </nav>
          </div>
       </header>
-      <h1>SUA FICHA AQUI</h1>
+      <main>
+         <h1>SUA FICHA AQUI</h1>
+      </main>
+      <footer class="container">
+         <section id="footer-section-left" class="footer-logo-container">
+            <a href="#hero">
+               <img id="logo-footer-icon" src="/assets/icons/favicon.svg" />
+               <h2>
+                  Wyverns & Waterfallls<sup><small>&copy;</small></sup>
+               </h2>
+            </a>
+         </section>
+         <section id="footer-section-right">
+            <h2>Navegação</h2>
+            <ul>
+               <li id="nav-sobre" class="nav-item">
+                  <a href="#sobre">Sobre</a>
+               </li>
+               <li id="nav-criar_ficha" class="nav-item">
+                  <a href="/pages/ficha-form/ficha-form.html">Criar Ficha</a>
+               </li>
+            </ul>
+         </section>
+      </footer>
    </body>
 </html>
