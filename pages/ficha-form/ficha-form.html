@@ -39,7 +39,7 @@
       </header>
       <main class="container main-padding">
          <div class="form-border">
-            <form onsubmit=" event.preventDefault(); console.log(event.target)">
+            <form onsubmit=" event.preventDefault(); for (const input of event.target){ console.log(input.value)}">
                <section id="name-section">
                   <label for="nome">Nome: </label>
                   <input type="text" name="nome" id="nome" required />
@@ -51,9 +51,53 @@
                      Feminino
                      <input type="radio" name="genero" id="masculino" value="m" required />
                      Masculino
-                     <input type="radio" name="genero" id="nao-binario" value="n"  required/>
+                     <input type="radio" name="genero" id="nao-binario" value="n" required />
                      Não obrigado
                   </div>
+               </section>
+               <section id="race-section">
+                  <label for="raca">Raça: </label>
+                  <select name="raca" id="raca" required>
+                     <optgroup label="Anões">
+                        <option>Anão da Colina</option>
+                        <option>Anão da Montanha</option>
+                     </optgroup>
+                     <optgroup label="Elfos">
+                        <option>Alto Elfo</option>
+                        <option>Elfo da Floresta</option>
+                        <option>Elfo Negro (Drow)</option>
+                        <option>Meio-Elfo</option>
+                     </optgroup>
+                     <optgroup label="Halflings (Hobbits)">
+                        <option>Pés Leves</option>
+                        <option>Robusto</option>
+                     </optgroup>
+                     <optgroup label="Humanos">
+                        <option>Humano Padrão</option>
+                        <option>Humano Variante</option>
+                     </optgroup>
+                     <optgroup label="Draconatos">
+                        <option>Azul</option>
+                        <option>Branco</option>
+                        <option>Bronze</option>
+                        <option>Cobre</option>
+                        <option>Latão</option>
+                        <option>Negro</option>
+                        <option>Ouro</option>
+                        <option>Prata</option>
+                        <option>Verde</option>
+                        <option>Vermelho</option>
+                     </optgroup>
+                     <optgroup label="Gnomos">
+                        <option>Gnomo da Floresta</option>
+                        <option>Gnomo das Rochas</option>
+                     </optgroup>
+                     <option>Meio-Orc</option>
+                     <optgroup label="Tieflings">
+                        <option>Infernal</option>
+                        <option>Abissal</option>
+                     </optgroup>
+                  </select>
                </section>
                <section id="class-section">
                   <label for="classe">Classe: </label>
