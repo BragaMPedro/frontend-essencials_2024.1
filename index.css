@@ -9,17 +9,8 @@
 
 .backdrop-blur {
    backdrop-filter: blur(5px);
-   background-color: #32000050;
+   background-color: var(--cor-primaria-50);
    background-blend-mode: lighten;
-}
-
-.main-padding {
-
-   min-height: 24rem;
-
-   padding: 0.867rem;
-   padding-top: 2rem;
-   padding-bottom: 2rem;
 }
 
 .hero-container {
@@ -75,7 +66,7 @@ section > h2 {
    gap: 1.5rem;
    
    border-radius: 1.25rem;
-   background-color: #512626;
+   background-color: var(--cor-primaria-light);
    box-shadow: 0 0.5rem 0.6rem 0 #00000050;
 }
 
@@ -96,7 +87,7 @@ section > h2 {
 }
 
 .card > a:hover{
-   color: var(--cor-primaria);
+   color: var(--cor-accent);
    transition-duration: 1000;
 }
 
@@ -110,7 +101,7 @@ section > h2 {
 }
 
 .backdrop-blur-alt {
-   background-color: #32000090;
+   background-color: var(--cor-primaria-90);
 }
 
 div[class*="container"]{
@@ -139,12 +130,6 @@ div[class*="container"]{
 
 /* Elemento com width maior que 640px */
 @media (min-width: 640px) {
-   .main-padding {
-      padding: 5%;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-   }
-
    .hero-container {
       flex-direction: row-reverse;
       gap: 0;
@@ -183,6 +168,6 @@ div[class*="container"]{
       min-width: 288px;
 
       border-radius: 1.25rem;
-      background-color: #512626;
+      background-color: var(--cor-primaria-light);
    }
 }

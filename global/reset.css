@@ -12,8 +12,15 @@ body {
 
 button{
    cursor: pointer;
-   border: none;
    background-color: transparent;
+}
+
+input, button{
+   border: none;
+   border-radius: 0.5rem;
+   
+   padding: 3%;
+   padding-right: 0.2rem; 
 }
 
 a {

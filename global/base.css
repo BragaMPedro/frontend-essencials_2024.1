@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 :root {
-   --cor-primaria: #0f74bc;
-   --cor-secundaria-dark: #320000;
-   --cor-terciaria: #0a5388;
+   --cor-primaria: #320000;
+   --cor-primaria-light: #512626;
+   --cor-primaria-90: #32000090;
+   --cor-primaria-50: #32000050;
+   
+   --cor-accent: #0f74bc;
    --cor-background: #050510;
 }
 
@@ -27,10 +30,25 @@ body {
    width: 100%;
 }
 
+.main-padding {
+
+   min-height: 24rem;
+
+   padding: 0.867rem;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
 /* Elemento com width maior que 640px */
 @media (min-width: 640px) {
    .container {
       max-width: 640px;
+   }
+
+   .main-padding {
+      padding: 5%;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
    }
 }
 

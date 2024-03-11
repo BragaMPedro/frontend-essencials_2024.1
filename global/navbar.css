@@ -117,6 +117,6 @@ a > h1 {
 
    .nav-item:hover {
       background-color: transparent;
-      color: var(--cor-primaria);
+      color: var(--cor-accent);
    }
 }
