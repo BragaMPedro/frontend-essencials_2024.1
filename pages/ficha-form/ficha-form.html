@@ -39,7 +39,7 @@
       </header>
       <main class="container main-padding">
          <div class="form-border">
-            <form onsubmit="handleSubmit(event)">
+            <form class="form" onsubmit="handleSubmit(event)">
                <section id="name-section">
                   <label for="nome">Nome: </label>
                   <input type="text" name="nome" id="nome" required />
@@ -121,7 +121,7 @@
                </section>
                <section id="historia-section">
                   <label for="historia">História: </label>
-                  <textarea id="historia" name="historia" minlength="10"></textarea>
+                  <textarea id="historia" name="historia" minlength="5"></textarea>
                </section>
                <section id="action-section">
                   <button type="submit">Criar Ficha</button>
