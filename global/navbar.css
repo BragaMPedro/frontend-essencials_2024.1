@@ -41,6 +41,7 @@ a > h1 {
 
 .menu-button {
    width: 2rem;
+   padding: 0;
 }
 
 .menu-button:hover {

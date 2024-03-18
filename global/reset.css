@@ -10,23 +10,22 @@ body {
    list-style-type: none;
 }
 
-button{
-   cursor: pointer;
+input,
+select,
+textarea,
+button  {
    background-color: transparent;
 }
 
-input, button{
+button {
+   cursor: pointer;
    border: none;
-   border-radius: 0.5rem;
-   
-   padding: 3%;
-   padding-right: 0.2rem; 
 }
 
 a {
    color: inherit;
 }
 
-ul{
+ul {
    list-style: none;
 }

@@ -67,9 +67,9 @@ function encurtaTexto(texto, length = 25) {
 }
 
 /**
- *
+ *Capitaliza e substituí todos os "-" por espaços " " da String value
  * @param {string} value
- * @returns {string}
+ * @returns {string} 
  */
 function titlefyValue(value) {
    let titlefiedValue = "";
@@ -86,7 +86,6 @@ function titlefyValue(value) {
    } else {
       titlefiedValue = capitalize(value);
    }
-
    titlefiedValue.trimEnd();
 
    return titlefiedValue;
