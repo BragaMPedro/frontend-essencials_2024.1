@@ -46,78 +46,100 @@
                </section>
                <section id="genero-section">
                   <label for="genero">Gênero: </label>
-                  <div>
-                     <input type="radio" name="genero" id="feminino" value="f" required />
-                     Feminino
-                     <input type="radio" name="genero" id="masculino" value="m" required />
-                     Masculino
-                     <input type="radio" name="genero" id="nao-binario" value="n" required />
-                     Não obrigado
+                  <div id="radio-select">
+                     <div id="radio-item">
+                        <input type="radio" name="genero" id="feminino" value="f" required />
+                        Feminino
+                     </div>
+                     <div>
+                        <input type="radio" name="genero" id="masculino" value="m" required />
+                        Masculino
+                     </div>
+                     <div>
+                        <input type="radio" name="genero" id="nao-binario" value="n" required />
+                        Não obrigado
+                     </div>
                   </div>
                </section>
                <section id="race-section">
                   <label for="raca">Raça: </label>
-                  <select name="raca" id="raca" required>
-                     <optgroup label="Anões">
-                        <option value="anao-da-colina">Anão da Colina</option>
-                        <option value="anao-da-montanha">Anão da Montanha</option>
-                     </optgroup>
-                     <optgroup label="Elfos">
-                        <option value="alto-elfo">Alto Elfo</option>
-                        <option value="elfo-da-floresta">Elfo da Floresta</option>
-                        <option value="elfo-negro">Elfo Negro</option>
-                        <option value="meio-elfo">Meio-Elfo</option>
-                     </optgroup>
-                     <optgroup label="Halflings (Hobbits)">
-                        <option value="halfling-pes-leves">Halfling Pés Leves</option>
-                        <option value="halfling-robusto">Halfling Robusto</option>
-                     </optgroup>
-                     <optgroup label="Humanos">
-                        <option value="humano-padrao">Humano Padrão</option>
-                        <option value="humano-variante">Humano Variante</option>
-                     </optgroup>
-                     <optgroup label="Draconatos">
-                        <option value="draconato-azul">Draconato Azul</option>
-                        <option value="draconato-branco">Draconato Branco</option>
-                        <option value="draconato-bronze">Draconato Bronze</option>
-                        <option value="draconato-cobre">Draconato Cobre</option>
-                        <option value="draconato-latão">Draconato Latão</option>
-                        <option value="draconato-negro">Draconato Negro</option>
-                        <option value="draconato-ouro">Draconato Ouro</option>
-                        <option value="draconato-prata">Draconato Prata</option>
-                        <option value="draconato-verde">Draconato Verde</option>
-                        <option value="draconato-vermelho">Draconato Vermelho</option>
-                     </optgroup>
-                     <optgroup label="Gnomos">
-                        <option value="gnomo-da-floresta">Gnomo da Floresta</option>
-                        <option value="gnomo-das-rochas">Gnomo das Rochas</option>
-                     </optgroup>
-                     <option value="meio-orc">Meio-Orc</option>
-                     <optgroup label="Tieflings">
-                        <option value="tiefling-infernal">Tiefling Infernal</option>
-                        <option value="tiefling-bbissal">Tiefling Abissal</option>
-                     </optgroup>
-                  </select>
-                  <button type="button" onclick="racaAleatoria()">randomize</button>
+                  <div class="select-container">
+                     <select name="raca" id="raca" required>
+                        <optgroup label="Anões">
+                           <option value="anao-da-colina">Anão da Colina</option>
+                           <option value="anao-da-montanha">Anão da Montanha</option>
+                        </optgroup>
+                        <optgroup label="Elfos">
+                           <option value="alto-elfo">Alto Elfo</option>
+                           <option value="elfo-da-floresta">Elfo da Floresta</option>
+                           <option value="elfo-negro">Elfo Negro</option>
+                           <option value="meio-elfo">Meio-Elfo</option>
+                        </optgroup>
+                        <optgroup label="Halflings (Hobbits)">
+                           <option value="halfling-pes-leves">Halfling Pés Leves</option>
+                           <option value="halfling-robusto">Halfling Robusto</option>
+                        </optgroup>
+                        <optgroup label="Humanos">
+                           <option value="humano-padrao">Humano Padrão</option>
+                           <option value="humano-variante">Humano Variante</option>
+                        </optgroup>
+                        <optgroup label="Draconatos">
+                           <option value="draconato-azul">Draconato Azul</option>
+                           <option value="draconato-branco">Draconato Branco</option>
+                           <option value="draconato-bronze">Draconato Bronze</option>
+                           <option value="draconato-cobre">Draconato Cobre</option>
+                           <option value="draconato-latão">Draconato Latão</option>
+                           <option value="draconato-negro">Draconato Negro</option>
+                           <option value="draconato-ouro">Draconato Ouro</option>
+                           <option value="draconato-prata">Draconato Prata</option>
+                           <option value="draconato-verde">Draconato Verde</option>
+                           <option value="draconato-vermelho">Draconato Vermelho</option>
+                        </optgroup>
+                        <optgroup label="Gnomos">
+                           <option value="gnomo-da-floresta">Gnomo da Floresta</option>
+                           <option value="gnomo-das-rochas">Gnomo das Rochas</option>
+                        </optgroup>
+                        <option value="meio-orc">Meio-Orc</option>
+                        <optgroup label="Tieflings">
+                           <option value="tiefling-infernal">Tiefling Infernal</option>
+                           <option value="tiefling-bbissal">Tiefling Abissal</option>
+                        </optgroup>
+                     </select>
+                     <button title="Escolher aleatório" class="btn-random" type="button" onclick="racaAleatoria()">
+                        <img
+                           src="/assets/icons/d20-icon.svg"
+                           alt="Ícone D20 Randomizar escolha"
+                           width="20px"
+                           height="20px" />
+                     </button>
+                  </div>
                </section>
                <section id="class-section">
                   <label for="classe">Classe: </label>
-                  <select name="classe" id="classe" required>
-                     <option value="artificer">Artificer</option>
-                     <option value="bárbaro">Bárbaro</option>
-                     <option value="bardo">Bardo</option>
-                     <option value="bruxo">Bruxo</option>
-                     <option value="clérigo">Clérigo</option>
-                     <option value="druida">Druida</option>
-                     <option value="feiticeiro">Feiticeiro</option>
-                     <option value="guerreiro">Guerreiro</option>
-                     <option value="ladino">Ladino</option>
-                     <option value="mago">Mago</option>
-                     <option value="monge">Monge</option>
-                     <option value="paladino">Paladino</option>
-                     <option value="patrulheiro">Patrulheiro</option>
-                  </select>
-                  <button type="button" onclick="classeAleatoria()">randomize</button>
+                  <div class="select-container">
+                     <select name="classe" id="classe" required>
+                        <option value="artificer">Artificer</option>
+                        <option value="bárbaro">Bárbaro</option>
+                        <option value="bardo">Bardo</option>
+                        <option value="bruxo">Bruxo</option>
+                        <option value="clérigo">Clérigo</option>
+                        <option value="druida">Druida</option>
+                        <option value="feiticeiro">Feiticeiro</option>
+                        <option value="guerreiro">Guerreiro</option>
+                        <option value="ladino">Ladino</option>
+                        <option value="mago">Mago</option>
+                        <option value="monge">Monge</option>
+                        <option value="paladino">Paladino</option>
+                        <option value="patrulheiro">Patrulheiro</option>
+                     </select>
+                     <button title="Escolher aleatório" class="btn-random" type="button" onclick="classeAleatoria()">
+                        <img
+                           src="/assets/icons/d20-icon.svg"
+                           alt="Ícone D20 Randomizar escolha"
+                           width="20px"
+                           height="20px" />
+                     </button>
+                  </div>
                </section>
                <section id="historia-section">
                   <label for="historia">História: </label>
