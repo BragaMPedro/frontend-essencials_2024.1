@@ -19,5 +19,3 @@ Requisitos:
 
     /pages/ficha-maker:
       /index,
-
-onhaxpk.net
