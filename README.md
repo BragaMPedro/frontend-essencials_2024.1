@@ -9,7 +9,7 @@
 3. [Uso](#uso)
 	* [Conteúdo](#conteúdo)
 		- [Home](#home)
-    - [Navegação](#navegação)
+  		- [Navegação](#navegação)
 		- [Criar ficha](#criar-ficha)
 4. [Contribuidores](#contribuidores)
 5. [Contato](#contato)
